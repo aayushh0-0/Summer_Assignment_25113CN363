@@ -4,7 +4,7 @@ int main()
     int n;
     int sum=0;
     printf("Enter the Number to Find the Sum of Digits\n");
-    scanf("%d",&n);
+    scanf("%d",&n);                 //input
     while(n>0)
     {
         sum+=(n%10);
