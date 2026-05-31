@@ -7,6 +7,7 @@ int main()
     scanf("%d", &r1);
     printf("Enter the Ending Range\n");
     scanf("%d", &r2);
+    printf("Prime Numbers in the Range Are ~ \n");
     while(r1<=r2)
     {
         flag=0;
