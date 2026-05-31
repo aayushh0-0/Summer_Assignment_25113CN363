@@ -28,6 +28,6 @@ int main()
         {
             printf("%d ", r1);
         }
-        r1++;
+        r1++; //increment
     }
 }
