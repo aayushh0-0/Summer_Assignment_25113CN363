@@ -21,6 +21,6 @@ int main()
             countodd++;
         }
     }
-    cout << endl << "The Number of Even Elements Are ~ " << counteve << endl;
-    cout << "The Number of Odd Elements are ~ " << countodd;
+    cout << endl << "The Number of Even Elements Are ~ " << counteve << endl; //counting even
+    cout << "The Number of Odd Elements are ~ " << countodd; //counting odd
 }
