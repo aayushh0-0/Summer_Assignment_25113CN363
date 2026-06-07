@@ -11,8 +11,8 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
-        sum += a[i];
+        sum = sum + a[i];
     }
-    cout << "The Sum of Array is ~ "<<sum<<endl;
-    cout<<"The Average of Array is ~ "<<(sum/n);
+    cout << "The Sum of Array is ~ " << sum << endl;   // Sum
+    cout << "The Average of Array is ~ " << (sum / n); // Average
 }
