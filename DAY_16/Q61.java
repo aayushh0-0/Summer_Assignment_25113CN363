@@ -22,7 +22,6 @@ public class Q61 {
                 System.out.print(i + " ");
             }
         }
-
         sc.close();
     }
 }
