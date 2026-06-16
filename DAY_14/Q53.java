@@ -28,9 +28,9 @@ public class Q53 {
         if (search) {
             System.out.println("Number Found! at index position ~ " + pos);
         } else {
-            System.out.println("Number Not Found!");
+            System.out.println("Number Not Found!!");
 
         }
-        sc.close();
+        sc.close(); // Program Close
     }
 }
