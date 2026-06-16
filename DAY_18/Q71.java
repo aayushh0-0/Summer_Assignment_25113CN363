@@ -1,0 +1,56 @@
+import java.util.*;
+
+public class Q71 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the Size of Array");
+        int n = sc.nextInt();
+        int a[] = new int[n];
+
+        // Input sorted array elements
+        System.out.println("Enter the Elements in Sorted Array");
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        // Print array
+        System.out.println("Array is ~ ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
+
+        System.out.println();
+        System.out.println("Enter the Element to Search");
+        int tar = sc.nextInt();
+
+        // Binary Search
+        int l = 0;
+        int r = n - 1;
+        boolean found = false;
+
+        while (l <= r) {
+
+            // Prevents integer overflow for large values of l and r
+            int mid = l + (r - l) / 2;
+
+            if (a[mid] == tar) {
+                System.out.println("Element Found at Index ~ " + mid);
+                found = true;
+                break;
+            }
+            else if (a[mid] < tar) {
+                l = mid + 1;
+            }
+            else {
+                r = mid - 1;
+            }
+        }
+
+        // Element not found
+        if (!found) {
+            System.out.println("Element Not Found");
+        }
+        sc.close();
+    }
+}
