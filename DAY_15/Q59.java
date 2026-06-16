@@ -31,6 +31,7 @@ public class Q59
         {
             System.out.print(num+" ");
         }
+        sc.close();
 
     }
     static void reverse(int a[],int l,int r)

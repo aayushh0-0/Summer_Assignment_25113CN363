@@ -5,34 +5,34 @@ public class Q57 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Size of Array");
         int n = sc.nextInt();
-        int a[]=new int[n];
+        int a[] = new int[n];
 
         // Using Two Pointer ~
 
         System.out.println("Enter the Elements in Array");
         for (int i = 0; i < n; i++) {
-            a[i]=sc.nextInt();
+            a[i] = sc.nextInt();
         }
 
         System.out.println("Original Array");
         for (int i = 0; i < n; i++) {
-            System.out.print(a[i]+" ");
+            System.out.print(a[i] + " ");
         }
-        
-        int l=0;
-        int r=n-1;
-        while(l<r)
-        {
-            int temp=a[l];
-            a[l]=a[r];
-            a[r]=temp;
+
+        int l = 0;
+        int r = n - 1;
+        while (l < r) {
+            int temp = a[l];
+            a[l] = a[r];
+            a[r] = temp;
             l++;
             r--;
         }
 
         System.out.println("\nReversed Array ~ ");
         for (int i = 0; i < n; i++) {
-            System.out.print(a[i]+" ");
+            System.out.print(a[i] + " ");
         }
+        sc.close();
     }
 }
