@@ -18,12 +18,13 @@ public class Q58 {
         }
 
         // using Two Pointers
-        System.out.println("Enter the Value of K to be Left Rotated");
-        int k = sc.nextInt();
 
-        reverse(a,0,k-1);
-        reverse(a,k,n-1);
-        reverse(a,0,n-1);
+        System.out.println("\nEnter the Value of K to be Left Rotated");
+        int k = sc.nextInt();
+        k=k%n;                   //for Avoiding Out of Bound Exception
+        reverse(a,0,k-1);     //reversing the First Array till k  
+        reverse(a,k,n-1);       //reversing the second Array till n from k 
+        reverse(a,0,n-1);    //reversing the Entire Array
 
         System.out.println("Rotated Array");
         for (int i = 0; i < n; i++) {
