@@ -36,5 +36,6 @@ public class Q66
         {
             System.out.print(num+" " );
         }
+        sc.close();
     }
 }
