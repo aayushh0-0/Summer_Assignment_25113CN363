@@ -20,16 +20,26 @@ public class Q80 {
             }
         }
 
-        // Print column-wise sums
-        System.out.println("Column-wise Sum is ~");
+        // Print the matrix
+        System.out.println("The Matrix is ~ ");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Sum of Columns is ~ ");
+        int sum = 0;
+
         for (int j = 0; j < n; j++) {
-            int cSum = 0;
+            sum = 0;
 
             for (int i = 0; i < m; i++) {
-                cSum += a[i][j];
+                sum += a[i][j];
             }
 
-            System.out.println("Column " + (j + 1) + " ~ " + cSum);
+            System.out.println("Column " + (j + 1) + " ~ " + sum);
         }
 
         sc.close();

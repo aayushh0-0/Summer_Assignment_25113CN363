@@ -17,7 +17,7 @@ public class Q78 {
             }
         }
 
-        // Print matrix
+        // Print the matrix
         System.out.println("The Matrix is ~ ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -28,25 +28,21 @@ public class Q78 {
 
         boolean sym = true;
 
-        // Check only the upper triangle
+        // Check whether a[i][j] is equal to a[j][i]
         for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 if (a[i][j] != a[j][i]) {
                     sym = false;
                     break;
                 }
             }
-
-            if (!sym) {
-                break;
-            }
         }
 
-        // Print result
+        // Print the result
         if (sym) {
             System.out.println("Matrix is Symmetric");
         } else {
-            System.out.println("Matrix is Not Symmetric");
+            System.out.println("Oops!, Matrix is Not Symmetric");
         }
 
         sc.close();
