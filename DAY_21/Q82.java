@@ -8,6 +8,8 @@ public class Q82 {
         System.out.println("Enter a String");
         String a = sc.nextLine();
         char b[] = a.toCharArray();
+
+
         // Using Double Pointer
         int l = 0;
         int r = a.length() - 1;
@@ -19,6 +21,8 @@ public class Q82 {
             l++;
             r--;
         }
+
+        
         System.out.println("Reversed String is ~ "+ new String(b));
         sc.close();
     }
